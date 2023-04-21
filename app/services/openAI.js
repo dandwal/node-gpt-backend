@@ -27,6 +27,7 @@ const getAIResponse = async(textRequest) => {
         content: textRequest,
     });
     try {
+        console.log('sending text to OpenAI:', textRequest)
         response = await openai.createChatCompletion({
             // model: "gpt-4",
             // model: "code-cushman-001",
